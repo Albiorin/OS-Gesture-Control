@@ -83,7 +83,7 @@ def draw_landmarks_on_image(rgb_image, detection_result):
 
     return annotated_image
 
-base_options = python.BaseOptions(model_asset_path='/Users/doruk/Documents/Gesture Detection/Hand Landmarker Task.task')
+base_options = python.BaseOptions(model_asset_path='ML Task Files/Hand Landmarker Task.task')
 options = vision.HandLandmarkerOptions(base_options=base_options, num_hands=2)
 detector = vision.HandLandmarker.create_from_options(options)
 
